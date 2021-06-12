@@ -142,7 +142,7 @@ function Home() {
     params.append("ProductName", text);
     params.append("Amount", amount);
 
-    axios.post("http://127.0.0.1:8080/expProduct", params).then((response) => {
+    axios.post("http://54.178.45.17:8080/expProduct", params).then((response) => {
       setExpenseItems([
         ...expenseItems,
         { text: inputText, amount: inputAmount, docId: docId },
